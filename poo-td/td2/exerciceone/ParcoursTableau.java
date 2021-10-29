@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.lang.Math;
 
 class ParcoursTableau {
     private int[] tab;
@@ -60,7 +59,13 @@ class ParcoursTableau {
 
     void affiche(){ 
         for(int i =0;i<tab.length;i++){
-            System.out.printf("%d \t",tab[i]);
+            
+            System.out.printf("|%d |\t",tab[i]);
+ if(i+1==5||(i+1)%5==0){
+            System.out.println("");
+            System.out.println("----------------------------------------");
+            }
+           
         }
     }
 }
