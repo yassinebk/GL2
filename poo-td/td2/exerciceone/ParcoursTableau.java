@@ -1,6 +1,5 @@
-
-package exerciceone; 
 import java.util.Random;
+import java.lang.Math;
 
 class ParcoursTableau {
     private int[] tab;
@@ -11,9 +10,11 @@ class ParcoursTableau {
 
     void remplir() {
         Random random = new Random();
-        for (int i = 0; i < 100; i++) {
-            tab[i] = random.nextInt(101);
+        for(int i=0;i<100;i++){
+            tab[i] =random.nextInt(100);
+            //System.out.println(i+'\t');
         }
+      
     }
 
     float moyenne() {
@@ -58,8 +59,8 @@ class ParcoursTableau {
     }
 
     void affiche(){ 
-        for(int i :tab){
-            System.out.println(tab[i]);
+        for(int i =0;i<tab.length;i++){
+            System.out.printf("%d \t",tab[i]);
         }
     }
 }
